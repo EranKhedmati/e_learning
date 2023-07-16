@@ -1,0 +1,197 @@
+/* Font face ---------------------------------------------------- */
+@font-face {
+  font-family: "Popins";
+  src: url("../../public/font/Poppins-Font/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-weight: 700;
+  src: url("../../public/font/Poppins-Font/Poppins-Bold.ttf");
+  font-family: "Popins";
+}
+
+/* Color Root ---------------------------------------------------- */
+:root {
+  --lightGreen: rgba(73, 187, 189, 0.6);
+  --green: #49bbbd;
+  --medGray: #acacac;
+}
+
+/* Global class ---------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Popins";
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* App ---------------------------------------------------- */
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  padding: 40px;
+  padding-right: 100px;
+  display: flex;
+  align-items: start;
+  gap: 100px;
+}
+
+/* Cover */
+.cover {
+  width: 50%;
+}
+
+/* Content */
+.container .content {
+  width: 50%;
+}
+
+/* intro */
+.container .content .intro {
+  margin-top: 2rem;
+}
+
+/* Switch buttons */
+.container .content .switch-btn {
+  max-width: 329px;
+  padding: 10px;
+  border-radius: 33px;
+  margin: 3rem auto;
+  background: var(--lightGreen);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container .content .switch-btn button {
+  width: 50%;
+  padding: 8px 50px;
+  border-radius: 33px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container .content .switch-btn button.active {
+  background: var(--lightGreen);
+}
+
+/* Form */
+.container .content .form {
+  margin-top: 2rem;
+}
+
+.container .content .form .input-box {
+  margin-top: 2rem;
+}
+
+.container .content .form .from-input {
+  width: 100%;
+  border: var(--lightGreen) 1px solid;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  margin-top: 0.5rem;
+}
+
+.container .content .form .from-input::placeholder {
+  color: var(--medGray);
+}
+/* Password */
+.container .content .form .input-box > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 40px;
+  margin-top: 0.5rem;
+  border: var(--lightGreen) 1px solid;
+  padding: 0 10px;
+}
+
+.container .content .form .input-box > div input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  border: none;
+}
+
+.container .content .form .input-box > div input::placeholder {
+    color: var(--medGray);
+}
+
+.container .content .form .input-box > div input:focus {
+    outline: none;
+}
+
+.container .content .form .input-box >div img {
+    cursor: pointer;
+}
+
+/* Remember */
+.container .content .form .remember-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.container .content .form .remember-box a{
+    color:  black;
+    text-decoration: none;
+    margin-left: auto;
+}
+
+/* Login button */
+.container .content .form .sub-box {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.container .content .form .sub-box .login-btn {
+    padding: 0.7rem 6rem;
+    border: none;
+    border-radius: 20px;
+    background: var(--green);
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 16px;
+}
+
+/* Media Query */
+@media (max-width: 1000px) {
+    .container .content {
+        width: 100%;
+    }
+    .container .cover {
+        display: none;
+    }
+
+    .container {
+        padding: 10px 20px;
+    }
+
+
+}

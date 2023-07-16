@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E learning</title>
+    <!-- Style ---------------------------------------------------- -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- App ---------------------------------------------------- -->
+    <div class="app">
+      <!--  Login ---------------------------------  -->
+      <div class="container">
+        <!--    Cover    -->
+        <img
+          src="../../public/images/showcase-login.png"
+          class="cover"
+          alt=""
+        />
+        <!--    Content    -->
+        <div class="content">
+          <p class="text-center intro">Welcome to lorem..!</p>
+          <!--     Swich button       -->
+          <div class="switch-btn">
+            <button class="active">Login</button>
+            <button id="register-btn">Register</button>
+          </div>
+          <!--     Paragraph      -->
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <!--      Form      -->
+          <form action="" id="add-form-login" class="form">
+            <!--       User name         -->
+            <div class="input-box">
+              <label class="input-label" for="username-login">User name</label>
+              <input
+                type="text"
+                class="from-input"
+                id="username-login"
+                placeholder="Enter your User name"
+              />
+            </div>
+            <!--       Password         -->
+            <div class="input-box">
+              <label class="input-label" for="password-login">Password</label>
+              <div>
+                <input
+                  type="password"
+                  class="from-input-password"
+                  id="password-login"
+                  placeholder="Enter your Password"
+                />
+                <img
+                  class="toggle-eye"
+                  src="../../public/images/eye-hide.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!--       Remember         -->
+            <div class="remember-box">
+              <input type="checkbox" id="login-remember" />
+              <label for="login-remember">Remember me</label>
+              <a href="#">Forgot Password</a>
+            </div>
+            <div class="sub-box">
+              <button type="submit" class="login-btn">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script ---------------------------------------------------- -->
+    <script src="script.js"></script>
+  </body>
+</html>

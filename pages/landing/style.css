@@ -1,0 +1,172 @@
+/* Font face ---------------------------------------------------- */
+@font-face {
+  font-family: "Popins";
+  src: url("../../public/font/Poppins-Font/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-weight: 700;
+  src: url("../../public/font/Poppins-Font/Poppins-Bold.ttf");
+  font-family: "Popins";
+}
+
+/* Color Root ---------------------------------------------------- */
+:root {
+  --lightGreen: rgba(73, 187, 189, 0.6);
+  --green: #49bbbd;
+  --medGray: #acacac;
+  --light: #fff;
+  --dark: #000;
+}
+
+/* Global class ---------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Popins";
+}
+
+/* container ---------------------------------------------------- */
+.container {
+  max-width: 1800px;
+  margin: auto;
+}
+
+/* Header ----------------------------- */
+.container header {
+  background: var(--green);
+  padding: 1rem 2rem;
+}
+
+/* Navbar */
+nav.navbar {
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+/* Nav large */
+nav.navbar .nav-lg {
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+nav.navbar .logo {
+  width: 70px;
+  margin-right: auto;
+}
+
+nav.navbar .nav-lg > a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+nav.navbar .nav-lg .login {
+  padding: 0.6rem 3rem;
+  background: var(--light);
+  border-radius: 80px;
+  cursor: pointer;
+  color: var(--dark);
+  margin-left: 3rem;
+}
+
+nav.navbar .nav-lg .signup {
+  padding: 0.6rem 3rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 80px;
+  cursor: pointer;
+  color: var(--light);
+}
+
+/* Nav Small */
+nav.navbar .menu-btn {
+  width: 35px;
+  display: none;
+  cursor: pointer;
+}
+
+nav.navbar .nav-sm {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: end;
+}
+
+nav.navbar .nav-sm .content {
+  width: 70%;
+  max-width: 500px;
+  height: 100%;
+  background: var(--light);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  padding-top: 6rem;
+}
+
+nav.navbar .nav-sm .content .close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+nav.navbar .nav-sm .content .close-btn > img {
+  width: 40px;
+}
+
+nav.navbar .nav-sm .content a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+nav.navbar .nav-sm .content .login {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.6rem 3rem;
+  background: var(--green);
+  border-radius: 80px;
+  cursor: pointer;
+  color: var(--light);
+  text-align: center;
+  margin-top: auto;
+  align-self: center;
+}
+
+nav.navbar .nav-sm .content .signup {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.6rem 3rem;
+  background: var(--green);
+  border-radius: 80px;
+  cursor: pointer;
+  color: var(--light);
+  text-align: center;
+  align-self: center;
+}
+
+/* Media Query ---------------------------------------------------- */
+@media (max-width: 1044px) {
+  /* Header */
+  nav.navbar .nav-lg {
+    display: none;
+  }
+
+  nav.navbar .menu-btn {
+    display: block;
+  }
+}

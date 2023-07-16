@@ -11,7 +11,7 @@
     <!-- App ---------------------------------------------------- -->
     <div class="app">
       <!--  Login ---------------------------------  -->
-      <div class="container">
+      <div class="container" id="login">
         <!--    Cover    -->
         <img
           src="../../public/images/showcase-login.png"
@@ -24,7 +24,7 @@
           <!--     Swich button       -->
           <div class="switch-btn">
             <button class="active">Login</button>
-            <button id="register-btn">Register</button>
+            <button id="register-btn" id="register-btn">Register</button>
           </div>
           <!--     Paragraph      -->
           <p>
@@ -68,6 +68,74 @@
             </div>
             <div class="sub-box">
               <button type="submit" class="login-btn">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Register --------------------------------- -->
+      <div class="container" id="register">
+        <!-- Cover -->
+        <img
+          src="../../public/images/showcase-signin.png"
+          class="cover"
+          alt=""
+        />
+        <!-- Content -->
+        <div class="content">
+          <p class="text-center intro">Welcome to lorem..!</p>
+          <!--     Swich button       -->
+          <div class="switch-btn">
+            <button id="login-btn">Login</button>
+            <button class="active">Register</button>
+          </div>
+          <!--     Paragraph      -->
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <!--      Form      -->
+          <form action="" id="add-form-login" class="form">
+            <!--       Email         -->
+            <div class="input-box">
+              <label class="input-label" for="email-register">email</label>
+              <input
+                type="text"
+                class="from-input"
+                id="email-register"
+                placeholder="Enter your Email"
+              />
+            </div>
+            <!--       User name         -->
+            <div class="input-box">
+              <label class="input-label" for="username-register">User name</label>
+              <input
+                type="text"
+                class="from-input"
+                id="username-register"
+                placeholder="Enter your User name"
+              />
+            </div>
+            <!--       Password         -->
+            <div class="input-box">
+              <label class="input-label" for="password-login">Password</label>
+              <div>
+                <input
+                  type="password"
+                  class="from-input-password"
+                  id="password-login"
+                  placeholder="Enter your Password"
+                />
+                <img
+                  class="toggle-eye"
+                  src="../../public/images/eye-hide.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- Sub btn -->
+            <div class="sub-box">
+              <button type="submit" class="login-btn">Register</button>
             </div>
           </form>
         </div>

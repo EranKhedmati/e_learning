@@ -26,3 +26,19 @@ toggleEye.forEach((eye) => {
     }
   });
 });
+
+// Switch pages ------------------------------------
+const registerBtn = document.getElementById("register-btn"),
+  loginBody = document.getElementById("login"),
+  loginBtn = document.getElementById("login-btn"),
+  registerBody = document.getElementById("register");
+
+registerBtn.addEventListener("click",()=>{
+  loginBody.style.display = 'none';
+  registerBody.style.display = "flex";
+})
+
+loginBtn.addEventListener("click",()=>{
+  loginBody.style.display = "flex";
+  registerBody.style.display = "none";
+})

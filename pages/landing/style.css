@@ -42,14 +42,19 @@ body {
 /* Header ----------------------------- */
 .container header {
   background: var(--green);
-  padding: 1rem 2rem;
+  height: 500px;
 }
 
-/* Navbar */
+/* Navbar -----------------------------*/
 nav.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   gap: 2.2rem;
   align-items: center;
+  padding: 1rem 2rem;
 }
 
 /* Nav large */
